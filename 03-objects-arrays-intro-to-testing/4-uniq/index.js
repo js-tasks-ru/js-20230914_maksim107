@@ -5,9 +5,11 @@
  */
 export function uniq(arr) {
     let arr_new = []
-    for (const item in arr) {
-        if (!arr_new.includes(item)) {
-            arr_new.push(item)
+    if (arr) {
+        for (const item of arr) {
+            if (!arr_new.includes(item)) {
+                arr_new.push(item)
+            }
         }
     }
     return arr_new
